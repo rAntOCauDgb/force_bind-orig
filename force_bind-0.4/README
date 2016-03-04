@@ -1,0 +1,32 @@
+github clone of (original, as at 2016-03-03) force_bind - http://freecode.com/projects/force_bind
+(http://kernel.embedromix.ro/us/)
+
+
+From force_bind/README:
+-----------------------
+
+Name:		force_bind
+
+Author:		Catali(ux) M. BOIE - catab at embedromix dot ro
+
+Start date:	2010-10-26
+
+Description:	Force binding on a specific IP and/or port.
+		Works with both IPv4 and IPv6.
+		It is useful if you have a binary application without sources
+		and without the possibility to configure address or port to
+		bind to.
+
+License:	GPLv3
+
+How it works:	force_bind is a shared object that is loaded with LD_PRELOAD and hooks 'bind' function.
+		Forcing an IP/port to bind to is done with environments variables.
+
+Examples:
+		1. FORCE_BIND_ADDRESS=127.0.0.1 FORCE_BIND_PORT=33 LD_PRELOAD=${LD_PRELOAD}:/usr/lib/force_bind.so your_program # force binding to 127.0.0.1/33.
+		2. FORCE_BIND_ADDRESS=127.0.0.2 LD_PRELOAD=${LD_PRELOAD}:/usr/lib/force_bind.so your_program # force binding to 127.0.0.2
+
+Installation:
+		- ./configure
+		- make
+		- make install

@@ -1,0 +1,17 @@
+[v0.3 -> v0.4]
+	Catalin(ux) M. BOIE (2):
+	      Corrected documentation.
+	      Bump up the version to 0.4.
+	
+
+[v0.2 -> v0.3]
+	Catalin(ux) M. BOIE (3):
+	      Store latest version/revision into LATEST_VER/REV for easy web update.
+	      Bump version to 0.3.
+	      Nothing to install in /usr/bin!
+	
+
+[v0.1 -> v0.2]
+	Catalin(ux) M. BOIE (1):
+	      Fixed install command.
+	
